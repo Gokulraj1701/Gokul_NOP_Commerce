@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apparels.sampletest">
+      <class name="apparels.runnshoes">
         <methods>
-          <include name="samplet"/>
+          <include name="Browsersetup"/>
+          <include name="beltEmailAFriend"/>
         </methods>
-      </class> <!-- apparels.sampletest -->
+      </class> <!-- apparels.runnshoes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

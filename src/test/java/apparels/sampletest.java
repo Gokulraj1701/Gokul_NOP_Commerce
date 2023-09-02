@@ -21,9 +21,10 @@ public class sampletest {
 		
 		WebDriver driver=new ChromeDriver();
 		Shoes=new shoes(driver);
-		driver.get("https://demo.nopcommerce.com/shoes");
+		driver.get("https://demo.nopcommerce.com/adidas-consortium-campus-80s-running-shoes");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
+		driver.findElement(By.linkText("Add your review")).click();
 		/*
 		 * Select sel=new Select(Shoes.shoesDisplayCount()); Thread.sleep(3000);
 		 * sel.selectByIndex(2); Thread.sleep(3000);
@@ -33,13 +34,15 @@ public class sampletest {
 		 * wl=driver.findElemshoe1EmailAFriendent(By.xpath("//button[@id='add-to-wishlist-button-25']"));
 		 * wl.click();
 		 */
-		Shoes.shoe1Click().click();
-		  Thread.sleep(3000); 
-		  Shoes.shoe1EmailAFriend().click();
-		  Thread.sleep(3000);
+		/*
+		 * Shoes.shoe1Click().click(); Thread.sleep(3000);
+		 * Shoes.shoe1EmailAFriend().click(); Thread.sleep(3000);
+		 */
 		 
 		//driver.findElement(By.xpath("//*[@id=\"product_enteredQuantity_25\"]")).sendKeys("4");
 		//Thread.sleep(6000);
+		
+		Thread.sleep(5000);
 		driver.close();
 		
 	}
