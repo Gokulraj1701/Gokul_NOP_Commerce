@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-02T14:58:55 UTC" name="finalProject by groups" finished-at="2023-09-02T14:59:50 UTC" duration-ms="55488">
+  <suite started-at="2023-09-03T08:20:07 UTC" name="Default suite" finished-at="2023-09-03T08:20:50 UTC" duration-ms="43049">
     <groups>
-      <group name="Belt">
-        <method signature="runnshoes.accessoriesBeltSelectFunction()[pri:11, instance:apparels.runnshoes@7cab1508]" name="accessoriesBeltSelectFunction" class="apparels.runnshoes"/>
-        <method signature="runnshoes.beltReviewFunction()[pri:12, instance:apparels.runnshoes@7cab1508]" name="beltReviewFunction" class="apparels.runnshoes"/>
-        <method signature="runnshoes.beltCountSelection()[pri:13, instance:apparels.runnshoes@7cab1508]" name="beltCountSelection" class="apparels.runnshoes"/>
-        <method signature="runnshoes.beltShippment()[pri:14, instance:apparels.runnshoes@7cab1508]" name="beltShippment" class="apparels.runnshoes"/>
-        <method signature="runnshoes.beltAddtoCartandWishlist()[pri:15, instance:apparels.runnshoes@7cab1508]" name="beltAddtoCartandWishlist" class="apparels.runnshoes"/>
-        <method signature="runnshoes.beltEmailAFriend()[pri:16, instance:apparels.runnshoes@7cab1508]" name="beltEmailAFriend" class="apparels.runnshoes"/>
-      </group> <!-- Belt -->
     </groups>
-    <test started-at="2023-09-02T14:58:55 UTC" name="GRP-Belt" finished-at="2023-09-02T14:59:50 UTC" duration-ms="55488">
-      <class name="apparels.runnshoes">
-        <test-method signature="accessoriesBeltSelectFunction()[pri:11, instance:apparels.runnshoes@7cab1508]" started-at="2023-09-02T14:58:55 UTC" name="accessoriesBeltSelectFunction" finished-at="2023-09-02T14:59:10 UTC" duration-ms="15276" status="PASS">
+    <test started-at="2023-09-03T08:20:07 UTC" name="Default test" finished-at="2023-09-03T08:20:50 UTC" duration-ms="43049">
+      <class name="downBarHomePage.CustomerServiceRunner">
+        <test-method is-config="true" signature="InvokeBrowser()[pri:0, instance:downBarHomePage.CustomerServiceRunner@7cab1508]" started-at="2023-09-03T08:20:07 UTC" name="InvokeBrowser" finished-at="2023-09-03T08:20:07 UTC" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accessoriesBeltSelectFunction -->
-        <test-method signature="beltReviewFunction()[pri:12, instance:apparels.runnshoes@7cab1508]" started-at="2023-09-02T14:59:10 UTC" name="beltReviewFunction" finished-at="2023-09-02T14:59:23 UTC" duration-ms="12735" status="PASS">
+        </test-method> <!-- InvokeBrowser -->
+        <test-method signature="searchKeyWord()[pri:0, instance:downBarHomePage.CustomerServiceRunner@7cab1508]" started-at="2023-09-03T08:20:07 UTC" name="searchKeyWord" finished-at="2023-09-03T08:20:23 UTC" duration-ms="16023" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beltReviewFunction -->
-        <test-method signature="beltCountSelection()[pri:13, instance:apparels.runnshoes@7cab1508]" started-at="2023-09-02T14:59:23 UTC" name="beltCountSelection" finished-at="2023-09-02T14:59:25 UTC" duration-ms="2200" status="PASS">
+        </test-method> <!-- searchKeyWord -->
+        <test-method signature="newsFunction()[pri:1, instance:downBarHomePage.CustomerServiceRunner@7cab1508]" started-at="2023-09-03T08:20:23 UTC" name="newsFunction" finished-at="2023-09-03T08:20:33 UTC" duration-ms="9474" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beltCountSelection -->
-        <test-method signature="beltShippment()[pri:14, instance:apparels.runnshoes@7cab1508]" started-at="2023-09-02T14:59:25 UTC" name="beltShippment" finished-at="2023-09-02T14:59:32 UTC" duration-ms="6776" status="PASS">
+        </test-method> <!-- newsFunction -->
+        <test-method signature="RecentlyViewedProducts()[pri:2, instance:downBarHomePage.CustomerServiceRunner@7cab1508]" started-at="2023-09-03T08:20:33 UTC" name="RecentlyViewedProducts" finished-at="2023-09-03T08:20:39 UTC" duration-ms="6722" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beltShippment -->
-        <test-method signature="beltAddtoCartandWishlist()[pri:15, instance:apparels.runnshoes@7cab1508]" started-at="2023-09-02T14:59:32 UTC" name="beltAddtoCartandWishlist" finished-at="2023-09-02T14:59:40 UTC" duration-ms="8862" status="PASS">
+        </test-method> <!-- RecentlyViewedProducts -->
+        <test-method signature="ComparedList()[pri:3, instance:downBarHomePage.CustomerServiceRunner@7cab1508]" started-at="2023-09-03T08:20:39 UTC" name="ComparedList" finished-at="2023-09-03T08:20:45 UTC" duration-ms="5649" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beltAddtoCartandWishlist -->
-        <test-method signature="beltEmailAFriend()[pri:16, instance:apparels.runnshoes@7cab1508]" started-at="2023-09-02T14:59:40 UTC" name="beltEmailAFriend" finished-at="2023-09-02T14:59:50 UTC" duration-ms="9544" status="PASS">
+        </test-method> <!-- ComparedList -->
+        <test-method signature="NewProductsFunction()[pri:4, instance:downBarHomePage.CustomerServiceRunner@7cab1508]" started-at="2023-09-03T08:20:45 UTC" name="NewProductsFunction" finished-at="2023-09-03T08:20:50 UTC" duration-ms="4946" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beltEmailAFriend -->
-      </class> <!-- apparels.runnshoes -->
-    </test> <!-- GRP-Belt -->
-  </suite> <!-- finalProject by groups -->
+        </test-method> <!-- NewProductsFunction -->
+      </class> <!-- downBarHomePage.CustomerServiceRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
