@@ -3,12 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="downBarHomePage.CustomerServiceRunner">
+      <class name="apparels.ApparelsRunner">
         <methods>
-          <include name="InvokeBrowser"/>
-          <include name="ComparedList"/>
+          <include name="beltShippment"/>
+          <include name="beltAddtoCartandWishlist"/>
+          <include name="EmailShoe"/>
+          <include name="reviewShoes"/>
+          <include name="beltCountSelection"/>
+          <include name="accessoriesBeltSelectFunction"/>
+          <include name="clothingsTshirtAddingToCartandWishlist"/>
+          <include name="clothingsTshirt"/>
+          <include name="Browsersetup"/>
+          <include name="clothingsShorting"/>
+          <include name="beltEmailAFriend"/>
+          <include name="shoesAddToCartAndWishList"/>
+          <include name="reviewclothings"/>
+          <include name="clothingsTshirtEmailSent"/>
+          <include name="beltReviewFunction"/>
         </methods>
-      </class> <!-- downBarHomePage.CustomerServiceRunner -->
+      </class> <!-- apparels.ApparelsRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

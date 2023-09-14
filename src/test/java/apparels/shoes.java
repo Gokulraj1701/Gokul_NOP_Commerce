@@ -35,10 +35,9 @@ WebDriver driver;
 	@FindBy(xpath="(//button[@class='button-2 add-to-compare-list-button'])[1]")
 	WebElement shoe1CompareListButton;
 	By shoe1EmailAFriend=By.xpath("//*[@id=\"product-details-form\"]/div[2]/div[1]/div[2]/div[9]/div[3]/button");
-	/*By shoeEmailFriendEmail=By.xpath("//input[@id='FriendEmail']");
-	By shoeEmailYourEmail=By.xpath("//input[@id='YourEmailAddress']");
-	By shoeEmailPersonalMessage=By.xpath("//textarea[@id='PersonalMessage']");
-	By shoeEmailSentButton=By.xpath("//button[@name='send-email']");*/
+	
+	By cartCount=By.xpath("//span[@class='cart-qty']");
+	By wishlistCount=By.xpath("//span[@class='wishlist-qty']");
 	public WebElement apparelsClick(){
 		return driver.findElement(apparelsClick);
 	}
@@ -82,6 +81,12 @@ WebDriver driver;
 	
 	public WebElement shoe1EmailAFriend(){
 		return driver.findElement(shoe1EmailAFriend);
+	}
+	public WebElement cartCount() {
+		return driver.findElement(cartCount);
+	}
+	public WebElement wishlistCount() {
+		return driver.findElement(wishlistCount);
 	}
 	
 }

@@ -1,5 +1,7 @@
 package apparels;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -124,9 +126,22 @@ public class ApparelsRunner
 		//Adding to cart and Wishlist
 		Thread.sleep(3000);
 		Shoes.shoe1AddtoCart().click();
-		Thread.sleep(8000);
+		Thread.sleep(2000);
+		String Cartcnt=Shoes.cartCount().getText();
+		if(!(Cartcnt.equals("(0)"))){
+			assertTrue(true);
+		}
+		else {assertTrue(false);}
+		
+		Thread.sleep(3000);
 		Shoes.shoe1WishList().click();
-		Thread.sleep(8000);
+		Thread.sleep(2000);
+		String WishListcnt=Shoes.wishlistCount().getText();
+		if(!(WishListcnt.equals("(0)"))) {
+			assertTrue(true);
+		}
+		else {assertTrue(false);}
+		Thread.sleep(3000);
 		Shoes.shoe1CompareListButton().click();
 		Thread.sleep(5000);
 		
@@ -221,7 +236,20 @@ public class ApparelsRunner
 		Thread.sleep(3000);
 		Clothings.clothing1AddtoCart().click();
 		Thread.sleep(2000);
+		String Cartcnt=Shoes.cartCount().getText();
+		if(!(Cartcnt.equals("(0)"))){
+			assertTrue(true);
+		}
+		else {assertTrue(false);}
+		
+		Thread.sleep(3000);
 		Clothings.clothing1AddtoWishlist().click();
+		Thread.sleep(2000);
+		String WishListcnt=Shoes.wishlistCount().getText();
+		if(!(WishListcnt.equals("(0)"))) {
+			assertTrue(true);
+		}
+		else {assertTrue(false);}
 		Thread.sleep(2000);
 		Clothings.clothing1AddtoCompareList().click();
 		Thread.sleep(2000);
@@ -247,13 +275,15 @@ public class ApparelsRunner
 	public void accessoriesBeltSelectFunction() throws InterruptedException
 	{
 		
-		  driver.get("https://demo.nopcommerce.com/");
-		  driver.findElement(By.linkText("Log in")).click();
-		  driver.findElement(By.xpath("//*[@id=\"Email\"]")).sendKeys(
-		  "gowthy33@gmail.com");
-		  driver.findElement(By.xpath("//*[@id=\"Password\"]")).sendKeys("Gow12345");
-		  driver.findElement(By.xpath("//button[@class='button-1 login-button']")).
-		  click();
+		/*
+		 * driver.get("https://demo.nopcommerce.com/");
+		 * driver.findElement(By.linkText("Log in")).click();
+		 * driver.findElement(By.xpath("//*[@id=\"Email\"]")).sendKeys(
+		 * "gowthy33@gmail.com");
+		 * driver.findElement(By.xpath("//*[@id=\"Password\"]")).sendKeys("Gow12345");
+		 * driver.findElement(By.xpath("//button[@class='button-1 login-button']")).
+		 * click();
+		 */
 		 
 		
 		
@@ -308,8 +338,19 @@ public class ApparelsRunner
 	{
 		Accessories.beltAddtoCart().click();
 		Thread.sleep(3000);
+		String Cartcnt=Shoes.cartCount().getText();
+		if(!(Cartcnt.equals("(0)"))){
+			assertTrue(true);
+		}
+		else {assertTrue(false);}
 		Accessories.beltAddtoWishList().click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		String WishListcnt=Shoes.wishlistCount().getText();
+		if(!(WishListcnt.equals("(0)"))) {
+			assertTrue(true);
+		}
+		else {assertTrue(false);}
+		Thread.sleep(2000);
 		Accessories.beltEmailaFriend().click();
 		Thread.sleep(2000);
 	}
